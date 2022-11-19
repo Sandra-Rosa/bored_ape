@@ -1,4 +1,7 @@
 import styles from './Home.css'
+import React, { useState } from "react";
+import { Link, useMatch, useResolvedPath } from "react-router-dom"
+
 
 const Home =()=>{
   return(
@@ -6,11 +9,11 @@ const Home =()=>{
       <header>
         <a href="#" className="logo">Do It Now</a>
         <ul>
-          <li><a href="#" className="active" >Home</a></li>
-          <li><a href="#">About us</a></li>
-          <li><a href="#">Contact us</a></li>
-          <li><a href="#">Sign up</a></li>
-          <li><a href="#">Sign in</a></li>
+          <li><CustomLink to='/home' className="active" >Home</CustomLink></li>
+          <li><CustomLink to='/about'>About us</CustomLink></li>
+          <li><CustomLink to='/contact'>Contact us</CustomLink></li>
+          <li><CustomLink to='/signup'>Sign up</CustomLink></li>
+          <li><CustomLink to='/signin'>Sign in</CustomLink></li>
         </ul>
         </header>
         <div className="div2">
@@ -53,7 +56,20 @@ window.addEventListener('scroll',function(){
   crow2.style.top = value * -1.5 + 'px';
   crow2.style.left = value * 1 + 'px';
   btn.style.marginTop = value * 1.5 + 'px';
-  grass.style.top = value * -0.1 + 'px';
+  grass.style.top = value * -0.12 + 'px';
   header.style.top = value * 0.5 + 'px';
 })
+
+function CustomLink({ to, children, ...props }) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end: true })
+
+  return (
+    <li className={isActive ? "active" : ""}>
+      <Link to={to} {...props}>
+        {children}
+      </Link>
+    </li>
+  )
+}
 export default Home;
