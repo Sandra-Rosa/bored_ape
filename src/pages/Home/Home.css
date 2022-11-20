@@ -11,7 +11,7 @@
     min-height: 100vh;
 }
 
-header {
+.Home header {
     position: absolute;
     top: 0;
     left: 0;
@@ -21,30 +21,31 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 10000;
+    background-color: #fff;
 }
 
-header .logo {
+.Home header .logo {
     color: #2d4722;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
 }
 
-header ul {
+.Home header ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li {
+.Home header ul li {
     list-style: none;
     margin-left: 20px;
 }
-header ul li a:hover{
+.Home header ul li a:hover{
     color: #fff;
     background-color: #2d4722;
 }
-header ul li a {
+.Home header ul li a {
     text-decoration: none;
     padding: 6px 15px;
     color: #2d4722;
@@ -53,15 +54,16 @@ header ul li a {
 
 /* navbar styling ending */
 
-.div2 {
+.Home .div2 {
     position: relative;
     width: 100%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #fff;
 }
-.div2::before{
+.Home .div2::before{
     content:'';
     position:absolute;
     bottom:0;
@@ -71,7 +73,7 @@ header ul li a {
     background: linear-gradient(to top,#2d4722,transparent);
     z-index:5;
 }
-.div2 img{
+.Home .div2 img{
     position:absolute;
     top:0;
     left:0;
@@ -80,7 +82,7 @@ header ul li a {
     object-fit: cover;
     pointer-events: none;
 }
-.div2 #text {
+.Home .div2 #text {
     position: absolute;
     color: #2d4722;
     font-size: 10vw;
@@ -90,13 +92,13 @@ header ul li a {
     transform:translateY(-50%);
 }
 
-.div2 #text span {
+.Home .div2 #text span {
     font-size: 0.2em;
     letter-spacing: 2px;
     font-weight: 400;
     font-family: 'Poppins', sans-serif;
 }
-.div2 #btn{
+.Home .div2 #btn{
     text-decoration: none;
     display:inline-block;
     padding:8px 30px;
@@ -108,27 +110,27 @@ header ul li a {
     border-radius: 40px;
     transform:translateY(100px);
 }
-.sec{
+.Home .sec{
     position:relative;
     padding:100px;
     background-color: #2d4722;
 }
-.sec h2{
+.Home .sec h2{
     font-size: 3.5em;
     color:#fff;
     margin-bottom: 10px;
 }
-.sec p{
+.Home .sec p{
     font-size: 1em;
     color:#fff;
 }
-#crow1{
+.Home #crow1{
     height:auto;
     width:10vw;
     margin-left: 10%;
     margin-top: 10%;
 }
-#crow2{
+.Home #crow2{
     height:auto;
     width:10vw;
     margin-left: 80%;

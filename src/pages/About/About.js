@@ -15,11 +15,11 @@ const About= ()=> {
           <li><CustomLink to='/signin'>Sign in</CustomLink></li>
         </ul>
         </header>
-        <div className="main">
-            <h1 id="main_heading">
+        <div className="maina">
+            <h1 id="main_headinga">
                 About us
             </h1>
-          <div className="para1">
+          <div className="para1a">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sed ipsum ac enim semper lacinia a ac justo. Sed convallis mauris non lacus fringilla consequat. Mauris tempor est tortor, ac laoreet nisi placerat fermentum. Suspendisse consectetur vitae neque quis pulvinar. Maecenas at elit sem. Sed gravida, magna ut fermentum dapibus, justo eros commodo risus, in gravida erat ante at ante. Fusce efficitur massa vitae urna dictum, vitae placerat ex suscipit. Cras eget ligula lobortis, accumsan massa nec, porttitor urna.</p>
           </div>
         </div>

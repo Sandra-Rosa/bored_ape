@@ -10,7 +10,7 @@
     min-height: 100vh;
 }
 
-header {
+.about    header {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,40 +22,40 @@ header {
     z-index: 10000;
 }
 
-header .logo {
+.about header .logo {
     color: #2d4722;
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
 }
 
-header ul {
+.about header ul {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-header ul li {
+.about header ul li {
     list-style: none;
     margin-left: 20px;
 }
-header ul li a:hover{
+.about header ul li a:hover{
     color: #fff;
     background-color: #2d4722;
 }
-header ul li a {
+.about header ul li a {
     text-decoration: none;
     padding: 6px 15px;
     color: #2d4722;
     border-radius: 20px;
 }
-.main #main_heading{
+.about .maina #main_headinga{
     text-align: center;
     margin-top: 10%;
     font-size: 50px;
     color: #2d4722;
 }
-.main .para1{
+.about .maina .para1a{
     color: #fff;
     background-color: #2d4722;
     margin-left: 10%;
