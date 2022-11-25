@@ -6,7 +6,11 @@ app.use(express.json())
 const mongoose = require('mongoose');
 const User = require("./models/user.model")
 const jwt = require('jsonwebtoken')
-mongoose.connect("mongodb+srv://sandra-rosa:123@cluster0.uyn3kgv.mongodb.net/?retryWrites=true&w=majority")
+const dotenv = require("dotenv")
+dotenv.config()
+// mongoose.connect("mongodb+srv://sandra-rosa:123@cluster0.uyn3kgv.mongodb.net/?retryWrites=true&w=majority")
+const connectionString = `mongodb+srv://${process.env.DB_USERNAME}:${process.env.DB_PASSWORD}@cluster0.uyn3kgv.mongodb.net/?retryWrites=true&w=majority`
+mongoose.connect(connectionString)
 app.post('/api/register',async (req,res)=>{
     console.log(req.body);
     try{
