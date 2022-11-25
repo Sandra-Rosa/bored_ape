@@ -8,6 +8,10 @@ import Contact from './components/Contact.js';
 import Signup from './components/Signup.js';
 import Signin from './components/Signin.js';
 import Dashboard from './components/Dashboard'
+import Careerguide from './components/Careerguide'
+import Careerinfo from './components/Careerinfo'
+import Collegeinfo from './components/Collegeinfo'
+
 function App() {
   return (
     <div className="App">
@@ -21,6 +25,9 @@ function App() {
           <Route path="/signup" element={<Signup />} />
           <Route path="/signin" element={<Signin />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/careerguide" element={<Careerguide />} />
+          <Route path="/careerinfo" element={<Careerinfo />} />
+          <Route path="/collegeinfo" element={<Collegeinfo />} />
         </Routes>
       </Router>
     </div>
