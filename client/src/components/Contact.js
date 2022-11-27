@@ -7,7 +7,10 @@ function Contact() {
   return (
     <div>
       <div>
-      <CollapsibleExample />
+        <CollapsibleExample />
+      </div>
+      <div className="contact">
+        Email us: boredapes123@gmail.com
       </div>
     </div>
   )

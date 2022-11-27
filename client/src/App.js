@@ -11,6 +11,11 @@ import Dashboard from './components/Dashboard'
 import Careerguide from './components/Careerguide'
 import Careerinfo from './components/Careerinfo'
 import Collegeinfo from './components/Collegeinfo'
+import Engineering from './components/careerinfo/Engineering';
+import Commerce from './components/careerinfo/Commerce';
+import Generalsciences from './components/careerinfo/Generalsciences';
+import Management from './components/careerinfo/Management';
+import Medicine from './components/careerinfo/Medicine';
 
 function App() {
   return (
@@ -28,6 +33,11 @@ function App() {
           <Route path="/careerguide" element={<Careerguide />} />
           <Route path="/careerinfo" element={<Careerinfo />} />
           <Route path="/collegeinfo" element={<Collegeinfo />} />
+          <Route path="/engineering" element={<Engineering />} />
+          <Route path="/commerce" element={<Commerce />} />
+          <Route path="/generalsciences" element={<Generalsciences />} />
+          <Route path="/management" element={<Management/>} />
+          <Route path="/medicine" element={<Medicine />} />
         </Routes>
       </Router>
     </div>
